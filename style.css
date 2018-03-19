@@ -1,0 +1,183 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	background-color: #FFF;
+	font-size: 16px;
+}
+
+/* 
+-------------------------------------------------------------------------
+-- Navigacija -----------------------------------------------------------
+------------------------------------------------------------------------- 
+*/
+
+.nav-container {
+	background-color: #259bc1;
+	overflow: auto;
+}
+
+.main-navigation {
+	width: 960px;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+/* Navigacija levo */
+.nav-left {
+	float: left;
+	margin: 17px 0px;
+	font-size: 13px;
+}
+
+.nav-left > * {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.nav-left > .logo {
+	vertical-align: middle;
+}
+
+.nav-left > p {
+	margin-left: 10px;
+	color: #055e92;
+	vertical-align: middle;
+}
+
+/* Navigacija desno */
+.nav-right {
+	float: right;
+	margin: 17px 0px;
+	font-size: 13px;
+}
+
+.nav-right > span, .nav-right > a:not(.active) {
+	color: #80c4da;
+	text-decoration: none;
+}
+
+.nav-right > a.active {
+	color: white;
+	padding: 10px 10px;
+	background-color: #51afcd;
+	border-radius: 7px;
+	text-decoration: none;
+}
+
+.nav-right > *:not(:last-child) {
+	margin-right: 12px;
+}
+
+@media(max-width: 380px) {
+	.main-navigation {
+		text-align: center;
+	}
+
+	.nav-left {
+		float: none;
+		display: inline-block;
+		margin-bottom: 0px;
+	}
+
+	.nav-right {
+		float: none;
+	}
+}
+
+/* 
+-------------------------------------------------------------------------
+-- options --------------------------------------------------------------
+------------------------------------------------------------------------- 
+*/
+
+.options-container {
+	background-color: #f8f8f8;
+	padding: 16px 0px;
+}
+
+.options {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.options > input.search {
+	height: 33px;
+	width: 230px;
+	background: url('images/search.png') no-repeat scroll 7px 9px;
+	background-color: #FFF;
+	padding-left: 30px;
+	border-radius: 6px;
+	border-color: #c4c4c4;
+	border-style: solid;
+
+}
+
+.options > a.new-acc-btn {
+	background-color: #8dc63f;
+	color: #FFF;
+	text-decoration: none;
+	padding: 11px 19px;
+	border-radius: 6px;
+	float: right;
+}
+
+@media(max-width: 960px) {
+	.options {
+		overflow:  auto;
+	}
+
+	.options input {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.options a.new-acc-btn {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		margin-top: 15px;
+		width: 225px;
+		text-align: center;
+	}
+}
+
+/* 
+-------------------------------------------------------------------------
+-- Table ----------------------------------------------------------------
+------------------------------------------------------------------------- 
+*/
+
+.table-container {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.data-table {
+	background-color: #FFF;
+}
+
+.data-table th, td {
+	border-bottom: 1px solid #eeeff0;
+	text-align: left;
+	padding: 10px;
+}
+
+.data-table th {
+	font-size: 13px;
+	padding-top: 0px;
+}
+
+.data-table th,
+.data-table tr td:not(:nth-child(2)) {
+	color: rgba(113,113,113,0.35); /* Uporabil sem rgba namesto opacity, ker opacity spremeni tudi spodnji border */
+}
+
+@media(max-width: 960px) {
+	
+}
+
